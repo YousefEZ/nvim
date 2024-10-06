@@ -1,5 +1,41 @@
-**This repo is supposed to used as config by NvChad users!**
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo-300x87.png" alt="Neovim">
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+  <a href="https://neovim.io/doc/">Documentation</a>
+</h1>
+
+# 📥 Installing 
+```zsh
+git clone https://github.com/YousefEZ/nvim ~/.config/nvim && nvim
+```
+
+- Run ``:MasonInstallAll`` command after lazy.nvim finishes downloading plugins.
+- Delete the ``.git`` folder from nvim folder.
+- Learn customization of ui & base46 from `:h nvui`.
+
+# ⬆️ Update
+``Lazy sync`` command
+
+# 🔥 Uninstall
+
+```zsh
+# Linux / MacOS (unix)
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+
+# Flatpak (linux)
+rm -rf ~/.var/app/io.neovim.nvim/config/nvim
+rm -rf ~/.var/app/io.neovim.nvim/data/nvim
+rm -rf ~/.var/app/io.neovim.nvim/.local/state/nvim
+
+# Windows CMD
+rd -r ~\AppData\Local\nvim
+rd -r ~\AppData\Local\nvim-data
+
+# Windows PowerShell
+rm -Force ~\AppData\Local\nvim
+rm -Force ~\AppData\Local\nvim-data
+```
+
+*based on [NvChad](https://nvchad.com/), with tutorial*
